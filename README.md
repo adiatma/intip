@@ -5,7 +5,12 @@
 ## Usage
 
 ```bash
+git clone git@github.com:adiatma/intip.git
+cd intip
 source ./intip.sh
+# or 
+chmod +x ./intip.sh
+./intip.sh
 ```
 
 ```

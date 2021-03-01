@@ -7,7 +7,11 @@
 ```bash
 git clone git@github.com:adiatma/intip.git
 cd intip
-source ./intip.sh
+source ./install.sh
+```
+
+```bash
+intip.sh
 ```
 
 ```
@@ -35,18 +39,6 @@ source ./intip.sh
 "proxy":false
 "hosting":false
 "query":"125.167.114.25"
-```
-
-## Convert `intip.sh` to an executable binary
-
-```bash
-cd intip/
-# copy `intip.sh` to path binary
-cp ./intip.sh /usr/local/bin/intip.sh
-chmod +x /usr/local/bin/intip.sh
-
-# execute
-intip.sh
 ```
 
 ## More

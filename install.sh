@@ -11,3 +11,13 @@ download() {
 }
 
 download
+
+cat <<EOF
+
+ 👀 intip.sh
+
+ Yey, congratulations, intip.sh success to install in your computer.
+
+ * Please try with execute intip.sh --inline.
+
+EOF

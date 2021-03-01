@@ -19,8 +19,21 @@ progress_bar() {
     clean_line
 }
 
+print_help() {
+  cat <<EOF
+
+  👀 intip.sh
+
+  Usage:
+    
+    --inline: to print with inline mode
+    --prompt: to print with prompt mode
+
+EOF
+}
+
 prompt_read_ip() {
-  echo -n "🤓 Input your ip in here?: "
+  echo -n "Input your ip in here?: "
   read IP_LOCATION
   progress_bar 100
   URL="${HOST}/${OUTPUT}/${IP_LOCATION}${FIELDS}"
@@ -42,7 +55,7 @@ case "$1" in
     prompt_read_ip
     ;;
   *)
-    echo "Usage: (--inline|--prompt)"
+    print_help
     ;;
 esac
 

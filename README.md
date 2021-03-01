@@ -8,9 +8,6 @@
 git clone git@github.com:adiatma/intip.git
 cd intip
 source ./intip.sh
-# or 
-chmod +x ./intip.sh
-./intip.sh
 ```
 
 ```
@@ -28,6 +25,18 @@ chmod +x ./intip.sh
 "org":""
 "as":"AS7713 PT Telekomunikasi Indonesia"
 "query":"125.167.114.25"
+```
+
+## Convert `intip.sh` to binary
+
+```bash
+cd intip/
+# copy `intip.sh` to path binary
+cp ./intip.sh /usr/local/bin/intip.sh
+chmod +x /usr/local/bin/intip.sh
+
+# execute
+intip.sh
 ```
 
 ## More

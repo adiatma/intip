@@ -2,13 +2,13 @@
 
 👀 Simple CLI to search local area by ip location.
 
-## Usage
+## Install
 
 ```bash
-git clone git@github.com:adiatma/intip.git
-cd intip
-source ./install.sh
+curl https://raw.githubusercontent.com/adiatma/intip/master/install.sh -s | bash
 ```
+
+## Usage
 
 ```bash
 intip.sh

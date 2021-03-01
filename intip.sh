@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
+HOST=http://ip-api.com
 
 prompt_read_ip() {
   echo -n "Your ip?: "
-  read ip
+  read IP
 }
 
 fetch_data() {
-  URL="http://ip-api.com/json/${ip}"
+  URL="${HOST}/json/${IP}"
   GET_DATA=$(curl "$URL" --silent)
 }
 

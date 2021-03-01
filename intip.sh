@@ -1,18 +1,31 @@
 #!/usr/bin/env bash
+
 HOST=http://ip-api.com
 
 prompt_read_ip() {
   echo -n "Your ip?: "
-  read IP
-}
-
-fetch_data() {
-  URL="${HOST}/json/${IP}"
+  read IP_LOCATION
+  URL="${HOST}/json/${IP_LOCATION}"
   GET_DATA=$(curl "$URL" --silent)
 }
 
-prompt_read_ip
-fetch_data
+read_inline() {
+  IP_LOCATION=${1}
+  URL="${HOST}/json/${IP_LOCATION}"
+  GET_DATA=$(curl "$URL" --silent)
+}
+
+case "$1" in
+  --inline)
+    read_inline $2
+    ;;
+  --prompt)
+    prompt_read_ip
+    ;;
+  *)
+    echo "Usage: (--inline|--prompt)"
+    ;;
+esac
 
 cat <<EOF | \
   sed -re 's@(\[|\]|\{|\})@@g' -e 's/,/\n/g' | \

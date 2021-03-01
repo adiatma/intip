@@ -29,3 +29,24 @@ chmod +x ./intip.sh
 "as":"AS7713 PT Telekomunikasi Indonesia"
 "query":"125.167.114.25"
 ```
+
+## More
+
+```bash
+./intip.sh (--inline|--prompt)
+```
+
+Usage with inline
+
+```bash
+./intip.sh --inline # get your ip location
+# or
+./intip.sh --inline <ip>
+```
+
+Usage with prompt
+
+```bash
+./intip.sh --prompt
+```
+

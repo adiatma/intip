@@ -7,12 +7,15 @@ FIELDS="?fields=66846719"
 print_help() {
   cat <<EOF
 
-  👀 intip.sh
+  intip.sh 👀
 
   Usage:
-    
-    --inline: to print with inline mode
-    --prompt: to print with prompt mode
+    intip.sh --inline <ip>
+    intip.sh --prompt
+
+  Options:
+    --inline : Execute with mode inline
+    --prompt : Execute with mode prompt
 
 EOF
 }

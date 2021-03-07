@@ -41,7 +41,7 @@ download_and_install_jq() {
     command mv $HOME/jq $JQ_BIN_LOCATION
     command chmod +x $JQ_BIN_LOCATION
   else
-    echo "😥 sorry currently just support (Darwin|Linux), please install jq by manual"
+    echo "😥 Sorry currently just support (OSX|Linux), please install jq by manual"
   fi
 }
 
@@ -67,9 +67,9 @@ cat <<EOF
 
  Yey, congratulations, intip.sh success to install in your computer.
 
- * Please try with execute intip.sh --inline.
- * Please dont forget to click star in https://github.com/adiatma/intip
-
+  * Please try to execute intip.sh --inline.
+  * Please don't forget to click the star in https://github.com/adiatma/intip
+ 
  thanks :)
 
 EOF
